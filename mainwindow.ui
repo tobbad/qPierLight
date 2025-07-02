@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>551</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>9</y>
+       <width>551</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>549</width>
+        <height>379</height>
+       </rect>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>-155</x>
+         <y>-89</y>
+         <width>801</width>
+         <height>581</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>_File</string>
+    </property>
+    <addaction name="actionNew_Project"/>
+    <addaction name="actionOpen_Project"/>
+    <addaction name="actionImport_Sequence_List"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Project"/>
+    <addaction name="actionSave_Project_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint_Project"/>
+    <addaction name="actionPrint_Communication"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>_Eidit</string>
+    </property>
+    <addaction name="actionEdit_Send_Sequence_List"/>
+    <addaction name="actionEdit_Receive_Sequence_List"/>
+    <addaction name="actionSwap_Send_and_Receive_Sequence_List"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind_Sequence_in_Communication_Window"/>
+   </widget>
+   <widget class="QMenu" name="menu_Run">
+    <property name="title">
+     <string>_Run</string>
+    </property>
+    <addaction name="actionStart_communication"/>
+    <addaction name="actionStop_Communication"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tools">
+    <property name="title">
+     <string>_Tools</string>
+    </property>
+    <addaction name="actionStart_Communication_Logging"/>
+    <addaction name="actionStop_Communication_Logging"/>
+    <addaction name="separator"/>
+    <addaction name="actionStart_Snapshot_Mode"/>
+    <addaction name="actionStop_Snapshot_Mode"/>
+    <addaction name="separator"/>
+    <addaction name="actionRestore_Documentation_Area"/>
+    <addaction name="actionKeyboard_Consol_Off"/>
+    <addaction name="separator"/>
+    <addaction name="actionRestore_Documentation_Area_2"/>
+    <addaction name="actionMinimize_Sequence_List"/>
+    <addaction name="separator"/>
+    <addaction name="actionProject_Settings"/>
+    <addaction name="actionOptions"/>
+    <addaction name="separator"/>
+    <addaction name="actionExpert_Options"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>_Help</string>
+    </property>
+    <addaction name="actionqPierLight_Help"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Run"/>
+   <addaction name="menu_Tools"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="toolTip">
+    <string>Status of program</string>
+   </property>
+  </widget>
+  <action name="actionNew_Project">
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="text">
+    <string>Open Project...</string>
+   </property>
+  </action>
+  <action name="actionImport_Sequence_List">
+   <property name="text">
+    <string>Import Sequence List</string>
+   </property>
+  </action>
+  <action name="actionSave_Project">
+   <property name="text">
+    <string>Save Project</string>
+   </property>
+  </action>
+  <action name="actionSave_Project_As">
+   <property name="text">
+    <string>Save Project As</string>
+   </property>
+  </action>
+  <action name="actionPrint_Project">
+   <property name="text">
+    <string>Print Project...</string>
+   </property>
+  </action>
+  <action name="actionPrint_Communication">
+   <property name="text">
+    <string>Print Communication</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionEdit_Send_Sequence_List">
+   <property name="text">
+    <string>Edit Send Sequence List...</string>
+   </property>
+  </action>
+  <action name="actionEdit_Receive_Sequence_List">
+   <property name="text">
+    <string>Edit Receive Sequence List...</string>
+   </property>
+  </action>
+  <action name="actionSwap_Send_and_Receive_Sequence_List">
+   <property name="text">
+    <string>Swap Send and Receive Sequence List</string>
+   </property>
+  </action>
+  <action name="actionFind_Sequence_in_Communication_Window">
+   <property name="text">
+    <string>Find Sequence in Communication Window...</string>
+   </property>
+  </action>
+  <action name="actionStart_communication">
+   <property name="text">
+    <string>Start Communication</string>
+   </property>
+  </action>
+  <action name="actionStop_Communication">
+   <property name="text">
+    <string>Stop Communication</string>
+   </property>
+  </action>
+  <action name="actionStart_Communication_Logging">
+   <property name="text">
+    <string>Start Communication Logging...</string>
+   </property>
+  </action>
+  <action name="actionStop_Communication_Logging">
+   <property name="text">
+    <string>Stop Communication Logging...</string>
+   </property>
+  </action>
+  <action name="actionStart_Snapshot_Mode">
+   <property name="text">
+    <string>Start Snapshot Mode...</string>
+   </property>
+  </action>
+  <action name="actionStop_Snapshot_Mode">
+   <property name="text">
+    <string>Stop Snapshot Mode...</string>
+   </property>
+  </action>
+  <action name="actionRestore_Documentation_Area">
+   <property name="text">
+    <string>Keyboard Consol On</string>
+   </property>
+  </action>
+  <action name="actionKeyboard_Consol_Off">
+   <property name="text">
+    <string>Keyboard Consol Off</string>
+   </property>
+  </action>
+  <action name="actionRestore_Documentation_Area_2">
+   <property name="text">
+    <string>Restore Documentation Area</string>
+   </property>
+  </action>
+  <action name="actionMinimize_Sequence_List">
+   <property name="text">
+    <string>Minimize Sequence List</string>
+   </property>
+  </action>
+  <action name="actionProject_Settings">
+   <property name="text">
+    <string>Project Settings...</string>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="text">
+    <string>Options...</string>
+   </property>
+  </action>
+  <action name="actionExpert_Options">
+   <property name="text">
+    <string>Expert Options...</string>
+   </property>
+  </action>
+  <action name="actionqPierLight_Help">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionWelcome_Screen_and_Examples">
+   <property name="text">
+    <string>Welcome Screen and Examples...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
